@@ -1,0 +1,96 @@
+.navbar {
+    /* height: 69px; */
+    padding-left: 24px !important;
+}
+
+.navbar .navbar-brand {
+    color: white !important;
+    font-size: 30px;
+    font-family: Comic Sans MS;
+}
+
+.navbar-bg-style {
+    background-color: #881a24;
+}
+
+.navbar .navbar-collapse {
+    justify-content: space-between;
+}
+
+.navbar .show {
+    background-color: #881a24;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item {
+    padding: 0px 20px;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-order {
+    /* padding-left: 0; */
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-order .dropdown-toggle::after {
+    margin-left: 2.255em;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-order .dropdown-menu {
+    background-color: black;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-order .dropdown-menu a:hover {
+    background-color: #707070;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item a {
+    color: white;
+    font-family: Comic Sans MS;
+}
+
+.navbar .btn-login {
+    padding: 10px 23px;
+    background-color: black;
+    font-family: Comic Sans MS;
+}
+
+.container-fluid .body-title {
+    color: #8a1d27;
+    padding: 25px 40px 0px 40px;
+    font-family: Comic Sans MS;
+}
+
+.container-fluid .body-search {
+    padding: 0px 40px 0px 40px;
+}
+
+.container-fluid .body-search .body-input {
+    width: 400px;
+}
+
+.container-fluid .body-search .btn-go {
+    padding: 11px 65px;
+    margin-left: 30px;
+}
+
+.container-fluid .card-section {
+    padding: 0px 40px;
+}
+
+.container-fluid .card-section .card .card-img-top {
+    background-color: #fafafa;
+    padding: 5% 40%;
+}
+
+.container-fluid .card-section .card-row {
+    padding-top: 30px;
+}
+
+.container-fluid .card-section .card .card-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar .navbar-collapse .navbar-nav .nav-item {
+        padding: 0;
+    }
+}
