@@ -1,11 +1,43 @@
 import React, { Component } from "react";
-import '../assets/css/headerstyle.css';
+import "../assets/css/style.css";
+import LoginModal from "../containers/loginModal.js";
+import ForgotPasswordModal from "../containers/forgotPasswordModal";
+import RegisterOneModal from "../containers/registerOneModal";
+import RegisterTwoModal from "../containers/registerTwoModal";
 
-class Header extends Component {
-  render() {
-    return (
+function Header() {
+  const [modalShow, setModalShow] = React.useState(false);
+  const [forgotPasswordModalShow, setForgotPasswordModalShow] = React.useState(
+    false
+  );
+  const [registerOneModalShow, setRegisterOneModalShow] = React.useState(false);
+  const [registerTwoModalShow, setRegisterTwoModalShow] = React.useState(false);
+
+  const handleBackLogin = (backData) => {
+    if (backData === "forgotpassword") setForgotPasswordModalShow(false);
+    if (backData === "registerOne") setRegisterOneModalShow(false);
+    if (backData === "registerTwo") setRegisterTwoModalShow(false);
+    setModalShow(true);
+  };
+
+  const handleOtherShowModal = (handleData) => {
+    if (handleData === "forgotpassword") setForgotPasswordModalShow(true);
+    if (handleData === "register") setRegisterOneModalShow(true);
+    setModalShow(false);
+  };
+
+  const handleNextStep = () => {
+    console.log("abcd")
+    setRegisterOneModalShow(false);
+    setRegisterTwoModalShow(true);
+  }
+
+  return (
+    <>
       <nav className="navbar navbar-expand-lg navbar-light navbar-bg-style">
-        <a className="navbar-brand" href="/">WineSource</a>
+        <a className="navbar-brand" href="/">
+          WineSource
+        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -82,11 +114,41 @@ class Header extends Component {
               </a>
             </li>
           </ul>
-          <button className="btn btn-dark btn-login">Login</button>
+          <button
+            className="btn btn-dark btn-login"
+            onClick={() => setModalShow(true)}
+          >
+            Login
+          </button>
         </div>
       </nav>
-    );
-  }
+      <LoginModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+        showForgotPasswordModal={() => handleOtherShowModal("forgotpassword")}
+        showRegisterModal={() => handleOtherShowModal("register")}
+      />
+
+      <ForgotPasswordModal
+        show={forgotPasswordModalShow}
+        onBackLogin={() => handleBackLogin("forgotpassword")}
+        onHide={() => setForgotPasswordModalShow(false)}
+      />
+
+      <RegisterOneModal
+        show={registerOneModalShow}
+        nextStep={() => handleNextStep()}
+        onBackLogin={() => handleBackLogin("registerOne")}
+        onHide={() => setRegisterOneModalShow(false)}
+      />
+
+      <RegisterTwoModal
+        show={registerTwoModalShow}
+        onBackLogin={() => handleBackLogin("registerTwo")}
+        onHide={() => setRegisterTwoModalShow(false)}
+      />
+    </>
+  );
 }
 
 export default Header;

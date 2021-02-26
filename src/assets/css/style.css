@@ -43,19 +43,19 @@
 
 .navbar .navbar-collapse .navbar-nav .nav-item a {
     color: white;
-    font-family: Comic Sans MS;
+    font-family: Poppins;
 }
 
 .navbar .btn-login {
     padding: 10px 23px;
     background-color: black;
-    font-family: Comic Sans MS;
+    font-family: Poppins;
 }
 
 .container-fluid .body-title {
     color: #8a1d27;
     padding: 25px 40px 0px 40px;
-    font-family: Comic Sans MS;
+    font-family: Poppins;
 }
 
 .container-fluid .body-search {
@@ -64,11 +64,17 @@
 
 .container-fluid .body-search .body-input {
     width: 400px;
+    border: none;
+}
+
+.container-fluid .body-search .body-input:focus {
+    outline: none;
 }
 
 .container-fluid .body-search .btn-go {
     padding: 11px 65px;
     margin-left: 30px;
+    font-family: Segoe UI;
 }
 
 .container-fluid .card-section {
