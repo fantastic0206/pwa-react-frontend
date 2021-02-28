@@ -17,23 +17,23 @@ function ShopingCart() {
             <div className="col-md-8">
               <img src={bottle} className="w-100" />
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 margin-font-common responsive-one">
               <h4>Cloud Wine</h4>
               <label>2017 From Napa</label>
             </div>
           </div>
         </div>
-        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 margin-font-common">
           <div className="row">
-            <div className="col-md-4">
-              <input className="shadow p-3 bg-body rounded" placeholder="2" />
+            <div className="col-md-4 responsive-one">
+              <input className="shadow p-3 bg-body rounded shopping-cart-input" placeholder="2" />
               <p>Quantatity</p>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 responsive-one">
               <h4>$ 40.00 USD</h4>
               <label>Price</label>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 responsive-two">
               <i>{trash}</i>
             </div>
           </div>
@@ -45,23 +45,23 @@ function ShopingCart() {
             <div className="col-md-8">
               <img src={bottle} className="w-100" />
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 margin-font-common responsive-one">
               <h4>Cloud Wine</h4>
               <label>2017 From Napa</label>
             </div>
           </div>
         </div>
-        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 margin-font-common">
           <div className="row">
-            <div className="col-md-4">
-              <input className="shadow p-3 bg-body rounded" placeholder="2" />
+            <div className="col-md-4 responsive-one">
+              <input className="shadow p-3 bg-body rounded shopping-cart-input" placeholder="2" />
               <p>Quantatity</p>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 responsive-one">
               <h4>$ 40.00 USD</h4>
               <label>Price</label>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 responsive-two">
               <i>{trash}</i>
             </div>
           </div>
@@ -81,7 +81,7 @@ function ShopingCart() {
             ></textarea>
           </div>
         </div>
-        <div className="col-xl-5 col-lg-5 col-md-5 col-sm 5">
+        <div className="col-xl-5 col-lg-5 col-md-5 col-sm 5 margin-font-common responsive-bottom">
             <div className="row">
                 <div className="col-md-6">
                     <h4>$ 80 USD</h4>

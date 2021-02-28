@@ -100,3 +100,21 @@
         padding: 0;
     }
 }
+
+@media screen and (max-width: 426px) {
+    .container-fluid h1 {
+        text-align: center;
+    }
+
+    .container-fluid .btn-go-group {
+        margin: 10px auto;
+    }
+
+    .container-fluid .btn-go-group .btn-go {
+        margin-left: 0;
+    }
+
+    .container-fluid .card-section .card-item-top {
+        margin-top: 20px;
+    }
+}

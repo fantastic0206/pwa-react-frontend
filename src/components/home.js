@@ -7,9 +7,11 @@ function Home() {
       <h1 className="body-title">WineSource</h1>
       <form className="form-inline my-2 my-lg-0 body-search">
         <input className="shadow p-3 bg-body rounded body-input" />
-        <button className="btn btn-dark btn-go" type="submit">
+        <div className="btn-go-group">
+          <button className="btn btn-dark btn-go" type="submit">
           GO
         </button>
+        </div>
       </form>
       <label className="pl-5">or browser our section</label>
       <div className="card-section">
@@ -23,7 +25,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 card-item-top">
             <div className="card shadow bg-body rounded">
               <img className="card-img-top" src={bottle} alt="Card image cap" />
               <div className="card-body">
@@ -32,7 +34,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 card-item-top">
             <div className="card shadow bg-body rounded">
               <img className="card-img-top" src={bottle} alt="Card image cap" />
               <div className="card-body">
@@ -52,7 +54,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 card-item-top">
             <div className="card shadow bg-body rounded">
               <img className="card-img-top" src={bottle} alt="Card image cap" />
               <div className="card-body">
@@ -61,7 +63,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 card-item-top">
             <div className="card shadow bg-body rounded">
               <img className="card-img-top" src={bottle} alt="Card image cap" />
               <div className="card-body">

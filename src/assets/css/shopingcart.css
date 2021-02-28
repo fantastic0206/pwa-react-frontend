@@ -2,3 +2,37 @@
     background-color: #7D030E;
     color: white;
 }
+
+.container-fluid .shopping-cart-input {
+    border: none;
+    width: 100%;
+}
+
+.container-fluid .margin-font-common {
+    margin: auto 0;
+    font-family: Poppins;
+}
+
+@media screen and (max-width: 426px) {
+    .container-fluid .responsive-one {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5px;
+    }
+
+    .container-fluid .responsive-one input {
+        width: 20%;
+    }
+
+    .container-fluid .responsive-two {
+        text-align: center;
+    }
+
+    .container-fluid .responsive-two i {
+        text-align: center;
+    }
+
+    .container-fluid .responsive-bottom {
+        text-align: center;
+    }
+}

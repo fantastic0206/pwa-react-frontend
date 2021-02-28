@@ -30,3 +30,9 @@
     margin: 0 auto;
     padding: 15px 30px;
 }
+
+@media screen and (max-width: 426px) {
+    .container-fluid-wine-request .wine-request-card .group-btn-input .btn-wine-request {
+        margin: 20px auto auto 33px !important;
+    }
+}
