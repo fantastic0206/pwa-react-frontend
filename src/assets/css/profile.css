@@ -1,0 +1,82 @@
+@media screen and (min-width: 768px) {
+    .container-fluid-profile {
+        padding: 0 20% !important;
+    }
+}
+
+.container-fluid-profile .card-profile {
+    padding: 0px 0px 0px 20px;
+}
+
+.container-fluid-profile .card-profile .group-profile-common {
+    justify-content: space-between;
+}
+
+.container-fluid-profile .card-profile .input-common-profile {
+    border: none;
+    width: 60%;
+    margin-right: 10%;
+}
+
+.container-fluid-profile .card-profile .title-profile-common {
+    font-family: Poppins;
+}
+
+.container-fluid-profile .card-profile .label-profile-common {
+    font-family: Poppins;
+}
+
+.container-fluid-profile .card-profile .input-common-profile:focus {
+    outline: none;
+}
+
+.container-fluid-profile .card-profile .profile-date {
+    justify-content: space-between;
+}
+
+.container-fluid-profile .card-profile .profile-date .profile-inner-date {
+    width: 60%;
+    margin-right: 10%;
+}
+
+.container-fluid-profile .card-profile .input-common-month {
+    border: none;
+    width: 33.3333333333333333333%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.container-fluid-profile .card-profile .input-common-month:focus {
+    outline: none;
+}
+
+.container-fluid-profile .card-profile .input-common-date {
+    border: none;
+    width: 33.3333333333333333333%;
+}
+
+.container-fluid-profile .card-profile .input-common-date:focus {
+    outline: none;
+}
+
+.container-fluid-profile .card-profile .input-common-year {
+    border: none;
+    width: 33.3333333333333333333%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.container-fluid-profile .card-profile .input-common-year {
+    outline: none;
+}
+
+.container-fluid-profile .btn-profile {
+    justify-content: space-between;
+}
+
+.container-fluid-profile .btn-profile .btn-common-profile {
+    background-color: #7D030E;
+    color: white;
+    font-family: Poppins;
+    width: 200px;
+}

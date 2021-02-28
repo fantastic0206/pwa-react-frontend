@@ -1,0 +1,54 @@
+@media screen and (min-width: 768px) {
+    .container-fluid-price-check {
+        padding: 0 20% !important;
+    }
+}
+
+.container-fluid-price-check .price-check-card {
+    padding: 0px 20px;
+}
+
+.container-fluid-price-check .price-check-card .input-price-check {
+    border: none;
+    width: 100%;
+}
+
+.container-fluid-price-check .price-check-card .input-price-check:focus {
+    outline: none;
+}
+
+.container-fluid-price-check .price-check-card .btn-price-check {
+    background-color: #7D030E;
+    font-family: Poppins;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.container-fluid-price-check .price-check-card .span-price-check {
+    background-color: #E5E5E5;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.container-fluid-price-check .price-check-card .input-price-check {
+    width: 80%;
+}
+
+.container-fluid-price-check .price-check-card .btn-price-check-average {
+    background-color: #7D030E;
+    font-family: Poppins;
+    color: white;
+    width: 200px;
+    height: 50px;
+    margin-top: 35px;
+}
+
+.container-fluid-price-check .price-check-card .btn-save-order-price-check {
+    background-color: #7D030E;
+    font-family: Poppins;
+    color: white;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+}

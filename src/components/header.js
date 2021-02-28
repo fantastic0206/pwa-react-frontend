@@ -1,9 +1,10 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import "../assets/css/style.css";
 import LoginModal from "../containers/loginModal.js";
 import ForgotPasswordModal from "../containers/forgotPasswordModal";
 import RegisterOneModal from "../containers/registerOneModal";
 import RegisterTwoModal from "../containers/registerTwoModal";
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [modalShow, setModalShow] = React.useState(false);
@@ -12,6 +13,7 @@ function Header() {
   );
   const [registerOneModalShow, setRegisterOneModalShow] = React.useState(false);
   const [registerTwoModalShow, setRegisterTwoModalShow] = React.useState(false);
+  const [user, setUser] = React.useState(false);
 
   const handleBackLogin = (backData) => {
     if (backData === "forgotpassword") setForgotPasswordModalShow(false);
@@ -31,6 +33,15 @@ function Header() {
     setRegisterOneModalShow(false);
     setRegisterTwoModalShow(true);
   }
+
+  const setSessionChrome = () => {
+    localStorage.setItem('isUser', true);
+    setModalShow(false)
+  }
+
+  useEffect(() => {
+    setUser(localStorage.getItem('isUser'));
+  });
 
   return (
     <>
@@ -62,16 +73,16 @@ function Header() {
               </a>
             </li>
             <li className="nav-item dropdown nav-order">
-              <a
+              <Link
                 className="nav-link dropdown-toggle"
-                href="#"
+                to="order"
                 id="navbarDropdownMenuLink"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
                 Orders
-              </a>
+              </Link>
               <div
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
@@ -94,14 +105,14 @@ function Header() {
               </div>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="pricecheck" className="nav-link" href="#">
                 Price Check
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="savedata" className="nav-link">
                 Saved Data
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
@@ -115,11 +126,17 @@ function Header() {
             </li>
           </ul>
           <button
-            className="btn btn-dark btn-login"
             onClick={() => setModalShow(true)}
+            className={user ? 'd-none' : 'btn btn-dark btn-login d-block'}
           >
             Login
           </button>
+          <Link
+            className={user ? 'btn btn-dark btn-login d-block' : 'd-none'}
+            to="profile"
+          >
+            Profile
+          </Link>
         </div>
       </nav>
       <LoginModal
@@ -127,6 +144,7 @@ function Header() {
         onHide={() => setModalShow(false)}
         showForgotPasswordModal={() => handleOtherShowModal("forgotpassword")}
         showRegisterModal={() => handleOtherShowModal("register")}
+        onLogin={setSessionChrome}
       />
 
       <ForgotPasswordModal

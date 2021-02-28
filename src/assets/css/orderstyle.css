@@ -1,0 +1,153 @@
+.container-fluid {
+    padding: 0 5% !important;
+}
+
+.container-fluid .body-title-order {
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+.container-fluid .btn-group-common .btn-padding {
+    justify-content: space-between;
+}
+
+.container-fluid .btn-group-common .btn-common {
+    border-radius: 50px;
+    background-color: #E5E5E5;
+    width: 152px;
+    height: auto;
+    font-family: Poppins;
+}
+
+.container-fluid .btn-group-common .btn-active-bg-color {
+    background-color: #7D030E;
+    color: white;
+}
+
+.container-fluid .card-group-common .card-part {
+    padding: 0px 10px;
+}
+
+.container-fluid .card-group-common .card-part .input-update-name {
+    border: none;
+    width: 100%;
+    height: 48px;
+    font-family: Poppins;
+}
+
+.container-fluid .card-group-common .card-part .input-update-name:focus {
+    outline: none;
+}
+
+.container-fluid .card-group-common .card-part .font-family-label {
+    font-family: Poppins;
+}
+
+.container-fluid .card-group-common .card-part .vivno-label .vivno-left {
+    font-family: Poppins;
+}
+
+.container-fluid .card-group-common .card-part .vivno-label .vivno-right {
+    font-family: Poppins;
+    margin-left: 200px;
+}
+
+.container-fluid .card-group-common .card-part .vivno-group .input-group {
+    height: 48px;
+    /* width: 100%; */
+}
+
+.container-fluid .card-group-common .card-part .vivno-group .input-group .span-input-order {
+    background-color: #E5E5E5;
+    height: 48px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.container-fluid .card-group-common .card-part .vivno-group .input-group .phone-input-order {
+    height: 48px;
+    border: none;
+    width: 60px;
+}
+
+.container-fluid .card-group-common .card-part .vivno-group .input-group .phone-input-order:focus {
+    outline: none;
+}
+
+.container-fluid .card-group-common .card-part .btn-update-name {
+    background-color: #7D030E;
+    color: white;
+    width: 100%;
+    height: 48px;
+    font-family: Poppins;
+}
+
+.container-fluid .card-group-common .card-title-common {
+    padding: 20px 0px 0px 0px;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.container-fluid .card-group-common .btn-inner-group {
+    justify-content: space-between;
+}
+
+.container-fluid .card-group-common .btn-inner-group .btn-inner-common {
+    border-radius: 50px;
+    background-color: #E5E5E5;
+    width: 100px;
+    font-family: Poppins;
+    font-size: 10px;
+}
+
+.container-fluid .card-group-common .btn-inner-group .btn-active-bg-color {
+    background-color: #7D030E;
+    color: white;
+}
+
+.container-fluid .card-group-common .card-img-common {
+    /* background-color: #fafafa; */
+    /* max-width: 500px; */
+    /* margin: 50px auto 0px auto; */
+}
+
+.container-fluid .card-group-common .card-img-common img {
+    width: 100%;
+    /* margin: 0 auto; */
+}
+
+.container-fluid .card-group-common .bottle-name {
+    font-family: Poppins;
+    width: 100%;
+}
+
+.container-fluid .card-group-common .img-group-process {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.container-fluid .card-group-common .img-group-process img {
+    min-width: 50px;
+}
+
+.container-fluid .card-group-common .btn-footer-group {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.container-fluid .card-group-common .btn-footer-group .btn-reject {
+    background-color: black;
+    color: white;
+    width: 200px;
+    font-family: Poppins;
+    height: 48px;
+}
+
+.container-fluid .card-group-common .btn-footer-group .btn-approve {
+    background-color: #7D030E;
+    color: white;
+    width: 200px;
+    font-family: Poppins;
+    height: 48px;
+}

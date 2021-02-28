@@ -22,7 +22,7 @@ function LoginModal(props) {
           <label className="move-forgot mt-2" onClick={props.showForgotPasswordModal}>
             Forgot password?
           </label>
-          <button className="btn btn-bg-login">Log In</button>
+          <button className="btn btn-bg-login" onClick={props.onLogin}>Log In</button>
           <button className="btn btn-bg-create" onClick={props.showRegisterModal}>Create an Account</button>
           {/* </Container> */}
         </Modal.Body>

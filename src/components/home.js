@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import bottle from "../assets/img/bottle.png";
+import bottle from "../assets/img/bottle-bg.png";
 
 function Home() {
   return (

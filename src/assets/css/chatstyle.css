@@ -1,0 +1,54 @@
+.modal-dialog .modal-content .modal-header {
+    flex-direction: row-reverse;
+    border-bottom: none;
+}
+
+.modal-dialog .modal-content .enter-email {
+    text-align: center;
+    color: #727171;
+}
+
+.modal-dialog .modal-content .modal-header .modal-title {
+    margin: 0 auto;
+    font-family: Segoe UI;
+    font-weight: 700;
+}
+
+.modal-dialog .modal-content .modal-header .close {
+    margin: -1rem -1rem -1rem -1rem;
+}
+
+.modal-dialog .modal-content .modal-body {
+    display: grid;
+}
+
+.modal-dialog .modal-content .modal-body .login-input {
+    border: none;
+    font-family: Segoe UI;
+}
+
+.modal-dialog .modal-content .modal-body .login-input:focus {
+    outline: none;
+}
+
+.modal-dialog .modal-content .modal-body .btn-bg-request-password {
+    background-color: #8A1D27;
+    font-family: Segoe UI;
+    color: white;
+    padding: 10px 0px;
+    margin-top: 40px;
+}
+
+.modal-dialog .modal-content .modal-body .btn-bg-back-login {
+    background-color: #F2F1F1;
+    font-family: Segoe UI;
+    color: black;
+    padding: 10px 0px;
+    margin-top: 10px;
+}
+
+/* @media screen and (min-width: 576px) {
+    .modal-dialog {
+        max-width: 90% !important;
+    }
+} */

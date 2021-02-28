@@ -1,0 +1,32 @@
+@media screen and (min-width: 768px) {
+    .container-fluid-wine-request {
+        padding: 0 20% !important;
+    }
+}
+
+.container-fluid-wine-request .wine-request-card {
+    padding: 0px 20px;
+}
+
+.container-fluid-wine-request .wine-request-card .group-btn-input .input-wine-request {
+    border: none;
+    width: 100%;
+}
+
+.container-fluid-wine-request .wine-request-card .group-btn-input .input-wine-request:focus {
+    outline: none;
+}
+
+.container-fluid-wine-request .wine-request-card .group-btn-input .btn-wine-request {
+    background-color: #7D030E;
+    color: white;
+    width: 80%;
+    height: 100%;
+}
+
+.container-fluid-wine-request .wine-request-card .btn-wine-request-image {
+    background-color: #7D030E;
+    color: white;
+    margin: 0 auto;
+    padding: 15px 30px;
+}
