@@ -151,3 +151,23 @@
     font-family: Poppins;
     height: 48px;
 }
+
+@media screen and (max-width: 1024px) {
+    .container-fluid .responsive-top {
+        margin-top: 1.5rem !important;
+    }
+
+    .container-fluid .responsive-top-price-check {
+        margin-top: 0.75rem !important;
+    }
+
+    .container-fluid .vivno-group {
+        margin-top: 0.375rem !important;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .container-fluid .card-bottom-order {
+        margin-bottom: 1.5rem !important;
+    }
+}

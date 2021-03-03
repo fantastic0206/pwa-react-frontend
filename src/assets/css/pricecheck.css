@@ -52,3 +52,14 @@
     height: 50px;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 426px) {
+    .container-fluid-price-check .input-price-check-top {
+        width: 100% !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .container-fluid-price-check .btn-price-check {
+        margin-left: 0 !important;
+    }
+}

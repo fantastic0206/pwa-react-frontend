@@ -10,7 +10,7 @@ function PriceCheck() {
         <div className="row group-btn-input">
           <div className="col-xl-8 col-lg-8 col-md-8 col-sm-8">
             <input
-              className="shadow p-3 bg-body rounded input-price-check"
+              className="shadow p-3 bg-body rounded input-price-check input-price-check-top"
               placeholder="What are you looking for"
             />
           </div>

@@ -17,9 +17,10 @@ function WineRequest() {
   const [isFile, setIsFile] = React.useState(false);
   const [file, setFile] = React.useState();
 
-  const onContinue = () => {
+  const onContinue = (data) => {
+    setFile(data);
     setModalShow(false);
-    setFile(true);
+    setIsFile(true);
   };
 
   const handleBackLogin = () => {
@@ -27,9 +28,9 @@ function WineRequest() {
     setLoginModalShow(true);
   };
 
-  useEffect(() => {
-    setIsFile(file);
-  });
+  const ImageThumb = ({ image }) => {
+    return <img src={URL.createObjectURL(image)} alt={image.name} className="w-100" />;
+  };
 
   return (
     <>
@@ -48,7 +49,7 @@ function WineRequest() {
             </div>
           </div>
           <div className="row pt-5">
-            {isFile ? (<img src={bottle} className="w-100" />) : (<img src="" />)}
+            {file && <ImageThumb image={file} />}
           </div>
           <div className="row pt-5">
             <button
@@ -63,7 +64,7 @@ function WineRequest() {
 
       <WineRequestModal
         show={modalShow}
-        onContinue={() => onContinue()}
+        onContinue={onContinue}
         onHide={() => setModalShow(false)}
       />
 

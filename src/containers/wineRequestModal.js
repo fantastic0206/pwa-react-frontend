@@ -9,6 +9,10 @@ function WineRequestModal(props) {
     setFile(e.target.files[0]);
   }
 
+  const onContinue = () => {
+    props.onContinue(file);
+  }
+
   const fileUpload = () => {
     document.getElementById("file_upload").click();
   }
@@ -27,7 +31,7 @@ function WineRequestModal(props) {
           {file && <ImageThumb image={file} />}
           <input type="file" onChange={(e) => handleUpload(e)} className="d-none" id="file_upload" />
           <button className="btn btn-bg-login" onClick={fileUpload}>Selete a File</button>
-          <button className="btn btn-bg-create" onClick={props.onContinue}>Continue</button>
+          <button className="btn btn-bg-create" onClick={onContinue}>Continue</button>
         </Modal.Body>
       </Modal>
     </>

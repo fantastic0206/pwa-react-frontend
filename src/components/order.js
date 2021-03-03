@@ -17,23 +17,23 @@ function Order() {
       <div className="container-fluid">
         <h1 className="text-center pt-2 body-title-order">Orders</h1>
         <div className="row btn-group-common">
-          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 btn-padding d-flex">
+          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 btn-padding d-flex mb-4">
             <button className="btn btn-common">All Orders</button>
             <button className="btn btn-common btn-active-bg-color">
               New Requests
             </button>
           </div>
-          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 btn-padding d-flex">
+          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 btn-padding d-flex mb-4">
             <button className="btn btn-common">Approval</button>
             <button className="btn btn-common">Pending Requests</button>
           </div>
-          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 btn-padding d-flex">
+          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 btn-padding d-flex mb-4">
             <button className="btn btn-common">Payment Pending</button>
             <button className="btn btn-common">Schedule Orders</button>
           </div>
         </div>
-        <div className="row card-group-common mt-4">
-          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+        <div className="row card-group-common">
+          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 card-bottom-order">
             <div className="card-part shadow bg-body rounded">
               <h2 className="text-center card-title-common">Aditya Ananth</h2>
               <div className="btn-inner-group d-flex">
@@ -44,7 +44,7 @@ function Order() {
                 <button className="btn btn-inner-common">Price Check</button>
                 <button className="btn btn-inner-common" onClick={() => setChatModalShow(true)}>Customer Chat</button>
               </div>
-              <div className="card-img-common pt-5 pl-5 pr-5">
+              <div className="card-img-common pt-5 pl-5 pr-5 mt-5">
                 <img src={bottle} alt="Card image cap" />
               </div>
               <label className="text-center bottle-name">
@@ -63,7 +63,7 @@ function Order() {
               </div>
             </div>
           </div>
-          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 card-bottom-order">
             <div className="card-part shadow bg-body rounded">
               <h2 className="text-center card-title-common">Aditya Ananth</h2>
               <div className="btn-inner-group d-flex">
@@ -74,85 +74,89 @@ function Order() {
                 </button>
                 <button className="btn btn-inner-common" onClick={() => setChatModalShow(true)}>Customer Chat</button>
               </div>
-              <div className="d-flex mt-5">
+              <div className="d-flex mt-5 responsive-top">
                 <input
                   className="shadow p-3 bg-body rounded input-update-name"
                   placeholder="Chardonnay 2017"
                 />
                 <button className="btn btn-update-name ml-5">
-                  Update Name
+                  Update
                 </button>
               </div>
-              <label className="border-bottom w-100 text-center mt-4 font-family-label">
+              <label className="border-bottom w-100 text-center mt-5 responsive-top-price-check font-family-label">
                 Price Checker
               </label>
-              <div className="d-flex vivno-label">
-                <label className="vivno-left">Vivno</label>
-                <label className="vivno-right">Vivno</label>
-              </div>
-              <div className="vivno-group d-flex">
-                <div className="input-group mb-3 shadow rounded">
-                  <span
-                    className="p-3 bg-body login-input span-input-order"
-                    id="basic-addon1"
-                  >
-                    $
-                  </span>
-                  <input
-                    type="text"
-                    className="p-3 bg-body login-input phone-input-order"
-                    placeholder=""
-                  />
+              <div className="row vivno-group mt-3">
+                <div className="col-md-6">
+                  <label>Vivno</label>
+                  <div className="input-group shadow rounded">
+                    <span
+                      className="p-3 bg-body login-input span-input-order"
+                      id="basic-addon1"
+                    >
+                      $
+                    </span>
+                    <input
+                      type="text"
+                      className="p-3 bg-body login-input phone-input-order"
+                      placeholder=""
+                    />
+                  </div>
                 </div>
-                <div className="input-group mb-3 shadow rounded ml-5">
-                  <span
-                    className="p-3 bg-body login-input span-input-order"
-                    id="basic-addon1"
-                  >
-                    $
-                  </span>
-                  <input
-                    type="text"
-                    className="p-3 bg-body login-input phone-input-order"
-                    placeholder=""
-                  />
+                <div className="col-md-6">
+                  <label>Vivno</label>
+                  <div className="input-group shadow rounded">
+                    <span
+                      className="p-3 bg-body login-input span-input-order"
+                      id="basic-addon1"
+                    >
+                      $
+                    </span>
+                    <input
+                      type="text"
+                      className="p-3 bg-body login-input phone-input-order"
+                      placeholder=""
+                    />
+                  </div>
                 </div>
               </div>
-              <div className="d-flex vivno-label">
-                <label className="vivno-left">Vivno</label>
-                <label className="vivno-right">Vivno</label>
-              </div>
-              <div className="vivno-group d-flex">
-                <div className="input-group mb-3 shadow rounded">
-                  <span
-                    className="p-3 bg-body login-input span-input-order"
-                    id="basic-addon1"
-                  >
-                    $
-                  </span>
-                  <input
-                    type="text"
-                    className="p-3 bg-body login-input phone-input-order"
-                    placeholder=""
-                  />
+              <div className="row vivno-group mt-4">
+                <div className="col-md-6">
+                  <label>Vivno</label>
+                  <div className="input-group shadow rounded">
+                    <span
+                      className="p-3 bg-body login-input span-input-order"
+                      id="basic-addon1"
+                    >
+                      $
+                    </span>
+                    <input
+                      type="text"
+                      className="p-3 bg-body login-input phone-input-order"
+                      placeholder=""
+                    />
+                  </div>
                 </div>
-                <div className="input-group mb-3 shadow rounded ml-5">
-                  <span
-                    className="p-3 bg-body login-input span-input-order"
-                    id="basic-addon1"
-                  >
-                    $
-                  </span>
-                  <input
-                    type="text"
-                    className="p-3 bg-body login-input phone-input-order"
-                    placeholder=""
-                  />
+                <div className="col-md-6">
+                  <label>Vivno</label>
+                  <div className="input-group shadow rounded">
+                    <span
+                      className="p-3 bg-body login-input span-input-order"
+                      id="basic-addon1"
+                    >
+                      $
+                    </span>
+                    <input
+                      type="text"
+                      className="p-3 bg-body login-input phone-input-order"
+                      placeholder=""
+                    />
+                  </div>
                 </div>
               </div>
               <div className="d-flex btn-footer-group pt-5 pb-5">
-                <button className="btn btn-reject">Get Website Prices</button>
-                <button className="btn btn-approve ml-5">Update Prices</button>
+                <button className="btn btn-reject">Prices</button>
+                <button className="btn btn-approve ml-5">Update</button>
               </div>
             </div>
           </div>
@@ -167,7 +171,7 @@ function Order() {
                 <button className="btn btn-inner-common">Price Check</button>
                 <button className="btn btn-inner-common" onClick={() => setChatModalShow(true)}>Customer Chat</button>
               </div>
-              <div className="card-img-common pt-5 pl-5 pr-5">
+              <div className="card-img-common pt-5 pl-5 pr-5 mt-5">
                 <img src={bottle} alt="Card image cap" />
               </div>
               <label className="text-center bottle-name">

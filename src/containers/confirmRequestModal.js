@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Modal from "react-bootstrap/Modal";
 import "../assets/css/loginstyle.css";
+import { Link } from 'react-router-dom';
 
 function ConfirmRequestModal(props) {
   return (
@@ -15,7 +16,7 @@ function ConfirmRequestModal(props) {
             className="shadow p-3 bg-body rounded login-input"
             placeholder="Enter the Number of cases:"
           />
-          <button className="btn btn-bg-login">Continue</button>
+          <Link to="shopingcart" className="btn btn-bg-login">Continue</Link>
           <button className="btn btn-bg-create" onClick={props.handleBackLogin}>Back to Login</button>
         </Modal.Body>
       </Modal>
