@@ -100,8 +100,8 @@
     font-size: 25px;
 }
 
-@media screen and (min-width: 576px) {
+/* @media screen and (min-width: 576px) {
     .modal-dialog {
         max-width: 430px !important;
     }
-}
+} */

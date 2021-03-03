@@ -75,11 +75,10 @@ function Header() {
             <li className="nav-item dropdown nav-order">
               <Link
                 className="nav-link dropdown-toggle"
-                to="order"
                 id="navbarDropdownMenuLink"
                 data-toggle="dropdown"
                 aria-haspopup="true"
-                aria-expanded="false"
+                // aria-expanded="false"
               >
                 Orders
               </Link>
@@ -87,9 +86,9 @@ function Header() {
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a className="dropdown-item" href="#">
+                <Link className="dropdown-item" to="order">
                   New Requests
-                </a>
+                </Link>
                 <a className="dropdown-item" href="#">
                   Approval
                 </a>

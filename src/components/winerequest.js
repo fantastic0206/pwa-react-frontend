@@ -4,6 +4,9 @@ import "../assets/css/winerequest.css";
 import WineRequestModal from "../containers/wineRequestModal";
 import ConfirmRequestModal from "../containers/confirmRequestModal";
 import LoginModal from "../containers/loginModal";
+import ForgotPasswordModal from "../containers/forgotPasswordModal";
+import RegisterOneModal from "../containers/registerOneModal";
+import RegisterTwoModal from "../containers/registerTwoModal";
 
 import bottle from "../assets/img/bottle-bg.png";
 
@@ -16,6 +19,37 @@ function WineRequest() {
 
   const [isFile, setIsFile] = React.useState(false);
   const [file, setFile] = React.useState();
+
+  const [forgotPasswordModalShow, setForgotPasswordModalShow] = React.useState(
+    false
+  );
+  const [registerOneModalShow, setRegisterOneModalShow] = React.useState(false);
+  const [registerTwoModalShow, setRegisterTwoModalShow] = React.useState(false);
+  const [user, setUser] = React.useState(false);
+
+  const handleBackLogins = (backData) => {
+    if (backData === "forgotpassword") setForgotPasswordModalShow(false);
+    if (backData === "registerOne") setRegisterOneModalShow(false);
+    if (backData === "registerTwo") setRegisterTwoModalShow(false);
+    setLoginModalShow(true);
+  };
+
+  const handleOtherShowModal = (handleData) => {
+    if (handleData === "forgotpassword") setForgotPasswordModalShow(true);
+    if (handleData === "register") setRegisterOneModalShow(true);
+    setLoginModalShow(false);
+  };
+
+  const handleNextStep = () => {
+    console.log("abcd")
+    setRegisterOneModalShow(false);
+    setRegisterTwoModalShow(true);
+  }
+
+  const setSessionChrome = () => {
+    localStorage.setItem('isUser', true);
+    setModalShow(false)
+  }
 
   const onContinue = (data) => {
     setFile(data);
@@ -31,6 +65,10 @@ function WineRequest() {
   const ImageThumb = ({ image }) => {
     return <img src={URL.createObjectURL(image)} alt={image.name} className="w-100" />;
   };
+
+  useEffect(() => {
+    setUser(localStorage.getItem('isUser'));
+  });
 
   return (
     <>
@@ -77,9 +115,28 @@ function WineRequest() {
       <LoginModal
         show={loginModalShow}
         onHide={() => setLoginModalShow(false)}
-        // showForgotPasswordModal={() => handleOtherShowModal("forgotpassword")}
-        // showRegisterModal={() => handleOtherShowModal("register")}
-        // onLogin={setSessionChrome}
+        showForgotPasswordModal={() => handleOtherShowModal("forgotpassword")}
+        showRegisterModal={() => handleOtherShowModal("register")}
+        onLogin={setSessionChrome}
+      />
+
+      <ForgotPasswordModal
+        show={forgotPasswordModalShow}
+        onBackLogin={() => handleBackLogins("forgotpassword")}
+        onHide={() => setForgotPasswordModalShow(false)}
+      />
+
+      <RegisterOneModal
+        show={registerOneModalShow}
+        nextStep={() => handleNextStep()}
+        onBackLogin={() => handleBackLogins("registerOne")}
+        onHide={() => setRegisterOneModalShow(false)}
+      />
+
+      <RegisterTwoModal
+        show={registerTwoModalShow}
+        onBackLogin={() => handleBackLogins("registerTwo")}
+        onHide={() => setRegisterTwoModalShow(false)}
       />
     </>
   );
